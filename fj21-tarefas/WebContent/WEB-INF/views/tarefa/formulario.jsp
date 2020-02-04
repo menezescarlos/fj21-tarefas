@@ -4,6 +4,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link href="resources/css/tarefas.css" rel="stylesheet">
+<link href="resources/css/jquery.css" rel="stylesheet">
+<script src="resources/js/jquery.js"></script>
+<script src="resources/js/jquery-ui.js"></script>
 <title>Adicionar Tarefas</title>
 </head>
 <body>
