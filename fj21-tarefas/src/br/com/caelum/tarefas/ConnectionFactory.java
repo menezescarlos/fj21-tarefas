@@ -15,7 +15,7 @@ public class ConnectionFactory {
 			throw new SQLException(e);
 		}
 
-		return DriverManager.getConnection("jdbc:mysql://localhost/tarefas", "root", "carlos04111988");
+		return DriverManager.getConnection("jdbc:mysql://localhost/tarefas", "root", "xxxxxx00000000");
 	}
 
 }
