@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,16 +8,14 @@
 <link href="resources/css/jquery.css" rel="stylesheet">
 <script src="resources/js/jquery.js"></script>
 <script src="resources/js/jquery-ui.js"></script>
-<title>Tarefa Finalizada</title>
+<title>Login</title>
 </head>
 <body>
-	<td>${tarefa.id}</td>
-	<td>${tarefa.descricao}</td>
-	<td>Finalizada</td>
-	<td><fmt:formatDate value="${tarefa.dataFinalizacao.time}" pattern="dd/MM/yyyy" /></td>
-		
-	<td><a href="removeTarefa?id=${tarefa.id}">Remover</a></td>
-	<td><a href="mostraTarefa?id=${tarefa.id}">Alterar</a></td>
-
+	<h2>Página de login das tarefas</h2>
+	<form action="efetuaLogin" method="post">
+		Login: <input type="text" name="login" />
+		Senha: <input type="password" name="senha" />
+		<input type="submit" value="Entrar nas tarefas" />
+	</form>
 </body>
 </html>
